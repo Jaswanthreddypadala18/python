@@ -1,0 +1,20 @@
+fastapi
+pyscript
+uvicorn[standard]
+sqlalchemy>=2.0
+asyncpg
+pydantic
+passlib[ argon2]
+python-jose
+python-multipart
+pyjwt
+bcrypt
+email-validator
+psycopg2-binary
+fastapi_mail
+starlette
+bcrypt==4.1.2
+pytz
+apscheduler
+
+
