@@ -15,6 +15,7 @@ fastapi_mail
 starlette
 bcrypt==4.1.2
 pytz
-apscheduler
-
+scheduler
+httpx
+pytest
 
