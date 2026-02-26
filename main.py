@@ -38,7 +38,7 @@ TEMP_EMAIL_STORE = {
 # PostgreSQL connection
 conn = psycopg2.connect(
     host="localhost",
-    database="postgres",
+    database="mydb",
     user="postgres",
     password="mynewpassword"
 )
@@ -2694,5 +2694,6 @@ def confirm_availability(data: ConfirmAvailabilityModel, user=Depends(auth_user)
     conn.commit()
 
     return response(True, "Availability updated", None, 200)
+
 
 
