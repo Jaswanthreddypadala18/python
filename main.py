@@ -40,7 +40,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="postgres",
     user="postgres",
-    password="Password123"
+    password="mynewpassword"
 )
 cursor = conn.cursor()
 
@@ -2694,4 +2694,5 @@ def confirm_availability(data: ConfirmAvailabilityModel, user=Depends(auth_user)
     conn.commit()
 
     return response(True, "Availability updated", None, 200)
+
 
